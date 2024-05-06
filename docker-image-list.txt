@@ -25,14 +25,39 @@ Alpine
 
 Node
 	Node 22:
-		node:22 (22, 22-bookworm, latest, bookworm, current, current-bookworm)
-		node:22-alpine (22-alpine, alpine, alpine3, alpine3.19, current-alpine)
+		node:22 (22, 22-bookworm, 22.1, 22.1-bookworm, 22.1.0, 22.1.0-bookworm, bookworm, current, current-bookworm, latest)
+		node:22-alpine (22-alpine, 22-alpine3.19, 22.1-alpine, 22.1-alpine3.19, 22.1.0-alpine, 22.1.0-alpine3.19, alpine, alpine3.19, current-alpine, current-alpine3.19)
+		node:22-slim (22-bookworm-slim, 22-slim, 22.1-bookworm-slim, 22.1-slim, 22.1.0-bookworm-slim, 22.1.0-slim, bookworm-slim, current-bookworm-slim, current-slim, slim)
 	Node 20:
-		node:20 (20, 20-bookworm, iron, iron-bookworm, lts, lts-bookworm)
-		node:20-alpine (20-alpine, lts-alpine, iron-alpine)
+		node:20 (20, 20-bookworm, 20.12, 20.12-bookworm, 20.12.2, 20.12.2-bookworm, iron, iron-bookworm, lts, lts-bookworm, lts-iron)
+		node:20-alpine (20-alpine, 20-alpine3.19, 20.12-alpine, 20.12-alpine3.19, 20.12.2-alpine, 20.12.2-alpine3.19, iron-alpine, iron-alpine3.19, lts-alpine, lts-alpine3.19)
+		node:20-slim (20-bookworm-slim, 20-slim, 20.12-bookworm-slim, 20.12-slim, 20.12.2-bookworm-slim, 20.12.2-slim, iron-bookworm-slim, iron-slim, lts-bookworm-slim, lts-slim)
 	Node 18:
-		node:18 (18, 18-bookworm, hydrogen, hydrogen-bookworm)
-		node:18-alpine (18-alpine, hydrogen-alpine)
+		node:18 (18, 18-bookworm, 18.20, 18.20-bookworm, 18.20.2, 18.20.2-bookworm, hydrogen, hydrogen-bookworm)
+		node:18-alpine (18-alpine, 18-alpine3.19, 18.20-alpine, 18.20-alpine3.19, 18.20.2-alpine, 18.20.2-alpine3.19, hydrogen-alpine, hydrogen-alpine3.19)
+		node:18-slim (18-bookworm-slim, 18-slim, 18.20-bookworm-slim, 18.20-slim, 18.20.2-bookworm-slim, 18.20.2-slim, hydrogen-bookworm-slim, hydrogen-slim)
+	Node 16:
+		node:16 (16, 16-bookworm, 16.20, 16.20-bookworm, 16.20.2, 16.20.2-bookworm, gallium, gallium-bookworm)
+		node:16-alpine (16-alpine, 16-alpine3.18, 16.20-alpine, 16.20-alpine3.18, 16.20.2-alpine, 16.20.2-alpine3.18, gallium-alpine, gallium-alpine3.18)
+		node:16-slim (16-bookworm-slim, 16-slim, 16.20-bookworm-slim, 16.20-slim, 16.20.2-bookworm-slim, 16.20.2-slim, gallium-bookworm-slim, gallium-slim)
+
+PM2 Docker Tags
+	PM2 22 (latest):
+		pm2/pm2:22 (22, 22-alpine, latest-alpine, latest)
+		pm2/pm2:22-bookworm (22-bookworm, latest-bookworm)
+		pm2/pm2:22-slim (22-slim, latest-slim)
+	PM2 20:
+		pm2/pm2:20 (20, 20-alpine)
+		pm2/pm2:20-bookworm (20-bookworm)
+		pm2/pm2:20-slim (20-slim)
+	PM2 18:
+		pm2/pm2:18 (18, 18-alpine)
+		pm2/pm2:18-bookworm (18-bookworm)
+		pm2/pm2:18-slim (18-slim)
+	PM2 16:
+		pm2/pm2:16 (16, 16-alpine)
+		pm2/pm2:16-bookworm (16-bookworm)
+		pm2/pm2:16-slim (16-slim)
 
 Python Versions
 	Python 3.12.3:

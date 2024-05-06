@@ -23,7 +23,26 @@ pull_and_save() {
 ubuntu_images=("ubuntu:noble" "ubuntu:24.04" "ubuntu:latest" "ubuntu:rolling" "ubuntu:jammy" "ubuntu:22.04" "ubuntu:focal" "ubuntu:20.04" "ubuntu:bionic" "ubuntu:18.04")
 debian_images=("debian:bookworm" "debian:bullseye" "debian:buster")
 alpine_images=("alpine:3.19.1" "alpine:3.18.6")
-node_images=("node:22" "node:22-alpine" "node:20" "node:20-alpine" "node:18" "node:18-alpine")
+node_images=(
+  node:22 node:22-bookworm node:22.1 node:22.1-bookworm node:22.1.0 node:22.1.0-bookworm node:bookworm node:current node:current-bookworm node:latest node:22-alpine node:22-alpine3.19 node:22.1-alpine node:22.1-alpine3.19 node:22.1.0-alpine node:22.1.0-alpine3.19 node:alpine node:alpine3.19 node:current-alpine node:current-alpine3.19 node:22-slim node:22-bookworm-slim node:22.1-bookworm-slim node:22.1-slim node:22.1.0-bookworm-slim node:22.1.0-slim node:bookworm-slim node:current-bookworm-slim node:current-slim node:slim
+  node:20 node:20-bookworm node:20.12 node:20.12-bookworm node:20.12.2 node:20.12.2-bookworm node:iron node:iron-bookworm node:lts node:lts-bookworm node:lts-iron node:20-alpine node:20-alpine3.19 node:20.12-alpine node:20.12-alpine3.19 node:20.12.2-alpine node:20.12.2-alpine3.19 node:iron-alpine node:iron-alpine3.19 node:lts-alpine node:lts-alpine3.19 node:20-slim node:20-bookworm-slim node:20.12-bookworm-slim node:20.12-slim node:20.12.2-bookworm-slim node:20.12.2-slim node:iron-bookworm-slim node:iron-slim node:lts-bookworm-slim node:lts-slim
+  node:18 node:18-bookworm node:18.20 node:18.20-bookworm node:18.20.2 node:18.20.2-bookworm node:hydrogen node:hydrogen-bookworm node:18-alpine node:18-alpine3.19 node:18.20-alpine node:18.20-alpine3.19 node:18.20.2-alpine node:18.20.2-alpine3.19 node:hydrogen-alpine node:hydrogen-alpine3.19 node:18-slim node:18-bookworm-slim node:18.20-bookworm-slim node:18.20-slim node:18.20.2-bookworm-slim node:18.20.2-slim node:hydrogen-bookworm-slim node:hydrogen-slim
+  node:16 node:16-bookworm node:16.20 node:16.20-bookworm node:16.20.2 node:16.20.2-bookworm node:gallium node:gallium-bookworm node:16-alpine node:16-alpine3.18 node:16.20-alpine node:16.20-alpine3.18 node:16.20.2-alpine node:16.20.2-alpine3.18 node:gallium-alpine node:gallium-alpine3.18 node:16-slim node:16-bookworm-slim node:16.20-bookworm-slim node:16.20-slim node:16.20.2-bookworm-slim node:16.20.2-slim node:gallium-bookworm-slim node:gallium-slim
+)
+pm2_images=(
+  "pm2/pm2:22" "pm2/pm2:22-alpine" "pm2/pm2:latest-alpine" "pm2/pm2:latest"
+  "pm2/pm2:22-bookworm" "pm2/pm2:latest-bookworm"
+  "pm2/pm2:22-slim" "pm2/pm2:latest-slim"
+  "pm2/pm2:20" "pm2/pm2:20-alpine"
+  "pm2/pm2:20-bookworm"
+  "pm2/pm2:20-slim"
+  "pm2/pm2:18" "pm2/pm2:18-alpine"
+  "pm2/pm2:18-bookworm"
+  "pm2/pm2:18-slim"
+  "pm2/pm2:16" "pm2/pm2:16-alpine"
+  "pm2/pm2:16-bookworm"
+  "pm2/pm2:16-slim"
+)
 python_images=("python:3.12.3" "python:3.12.3-slim" "python:3.12.3-alpine" "python:3.11.9" "python:3.11.9-slim" "python:3.11.9-alpine")
 postgres_images=("postgres:16.2" "postgres:15.6" "postgres:14.11" "postgres:13.14" "postgres:12.18")
 mongo_images=("mongo:7" "mongo:6" "mongo:5" "mongo:4")
@@ -81,6 +100,7 @@ pull_and_save ubuntu_images "ubuntu-images"
 pull_and_save debian_images "debian-images"
 pull_and_save alpine_images "alpine-images"
 pull_and_save node_images "node-images"
+pull_and_save pm2_images "pm2-images"
 pull_and_save python_images "python-images"
 pull_and_save postgres_images "postgres-images"
 pull_and_save mongo_images "mongo-images"
