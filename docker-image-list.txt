@@ -189,6 +189,10 @@ HAProxy - The Reliable, High Performance TCP/HTTP Load Balancer
 	haproxy:2.9 (2.9.7, 2.9, latest, 2.9.7-bookworm, 2.9-bookworm, bookworm)
 	haproxy:2.9-alpine (2.9.7-alpine, 2.9-alpine, alpine, 2.9.7-alpine3.19, 2.9-alpine3.19, alpine3.19)
 
+Traefik, The Cloud Native Edge Router
+	traefik:beaufort (v3.0.0, 3.0.0, v3.0, 3.0, beaufort, latest)
+	traefik:mimolette (v2.11.2, 2.11.2, v2.11, 2.11, mimolette)
+
 Ghost (a free and open source blogging platform written in JavaScript)
 	ghost:5 (5.82.2, 5.82, 5, latest)
 	ghost:5-alpine (5.82.2-alpine, 5.82-alpine, 5-alpine, alpine)

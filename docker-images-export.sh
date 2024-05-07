@@ -60,6 +60,7 @@ apache_images=("httpd:2" "httpd:2-alpine")
 docker_images=("docker:cli" "docker:dind" "docker:dind-rootless")
 rabbitmq_images=("rabbitmq:3.13" "rabbitmq:3.13-management" "rabbitmq:3.13-alpine" "rabbitmq:3.13-management-alpine" "rabbitmq:3.12" "rabbitmq:3.12-management" "rabbitmq:3.12-alpine" "rabbitmq:3.12-management-alpine")
 haproxy_images=("haproxy:2.9" "haproxy:2.9-alpine")
+traefik_images=("traefik:v3.0.0" "traefik:3.0.0" "traefik:v3.0" "traefik:3.0" "traefik:beaufort" "traefik:latest" "traefik:v2.11.2" "traefik:2.11.2" "traefik:v2.11" "traefik:2.11" "traefik:mimolette")
 ghost_images=("ghost:5" "ghost:5-alpine")
 gcc_images=("gcc:13" "gcc:12" "gcc:11" "gcc:10" "gcc:9")
 gitlab_images=(
@@ -118,6 +119,7 @@ pull_and_save apache_images "apache-images"
 pull_and_save docker_images "docker-in-docker-images"
 pull_and_save rabbitmq_images "rabbitmq-images"
 pull_and_save haproxy_images "haproxy-images"
+pull_and_save traefik_images "traefik-images"
 pull_and_save ghost_images "ghost-images"
 pull_and_save gcc_images "gcc-images"
 pull_and_save gitlab_images "gitlab-images"
