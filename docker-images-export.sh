@@ -29,20 +29,7 @@ node_images=(
   node:18 node:18-bookworm node:18.20 node:18.20-bookworm node:18.20.2 node:18.20.2-bookworm node:hydrogen node:hydrogen-bookworm node:18-alpine node:18-alpine3.19 node:18.20-alpine node:18.20-alpine3.19 node:18.20.2-alpine node:18.20.2-alpine3.19 node:hydrogen-alpine node:hydrogen-alpine3.19 node:18-slim node:18-bookworm-slim node:18.20-bookworm-slim node:18.20-slim node:18.20.2-bookworm-slim node:18.20.2-slim node:hydrogen-bookworm-slim node:hydrogen-slim
   node:16 node:16-bookworm node:16.20 node:16.20-bookworm node:16.20.2 node:16.20.2-bookworm node:gallium node:gallium-bookworm node:16-alpine node:16-alpine3.18 node:16.20-alpine node:16.20-alpine3.18 node:16.20.2-alpine node:16.20.2-alpine3.18 node:gallium-alpine node:gallium-alpine3.18 node:16-slim node:16-bookworm-slim node:16.20-bookworm-slim node:16.20-slim node:16.20.2-bookworm-slim node:16.20.2-slim node:gallium-bookworm-slim node:gallium-slim
 )
-pm2_images=(
-  "pm2/pm2:22" "pm2/pm2:22-alpine" "pm2/pm2:latest-alpine" "pm2/pm2:latest"
-  "pm2/pm2:22-bookworm" "pm2/pm2:latest-bookworm"
-  "pm2/pm2:22-slim" "pm2/pm2:latest-slim"
-  "pm2/pm2:20" "pm2/pm2:20-alpine"
-  "pm2/pm2:20-bookworm"
-  "pm2/pm2:20-slim"
-  "pm2/pm2:18" "pm2/pm2:18-alpine"
-  "pm2/pm2:18-bookworm"
-  "pm2/pm2:18-slim"
-  "pm2/pm2:16" "pm2/pm2:16-alpine"
-  "pm2/pm2:16-bookworm"
-  "pm2/pm2:16-slim"
-)
+pm2_images=("tyrese3915/pm2:alpine" "tyrese3915/pm2:slim" "tyrese3915/pm2:bookworm" "tyrese3915/pm2:22" "tyrese3915/pm2:22-alpine" "tyrese3915/pm2:latest-alpine" "tyrese3915/pm2:latest" "tyrese3915/pm2:20" "tyrese3915/pm2:20-alpine" "tyrese3915/pm2:18" "tyrese3915/pm2:18-alpine" "tyrese3915/pm2:16" "tyrese3915/pm2:16-alpine" "tyrese3915/pm2:22-bookworm" "tyrese3915/pm2:latest-bookworm" "tyrese3915/pm2:20-bookworm" "tyrese3915/pm2:18-bookworm" "tyrese3915/pm2:16-bookworm" "tyrese3915/pm2:22-slim" "tyrese3915/pm2:latest-slim" "tyrese3915/pm2:20-slim" "tyrese3915/pm2:18-slim" "tyrese3915/pm2:16-slim")
 python_images=("python:3.12.3" "python:3.12.3-slim" "python:3.12.3-alpine" "python:3.11.9" "python:3.11.9-slim" "python:3.11.9-alpine")
 postgres_images=("postgres:16.2" "postgres:15.6" "postgres:14.11" "postgres:13.14" "postgres:12.18")
 mongo_images=("mongo:7" "mongo:6" "mongo:5" "mongo:4")
